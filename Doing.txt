@@ -1,0 +1,10 @@
+__LOGIN_PAGE__
+
+    - Botão para Painel Admnistrador
+            - Leva para outra __ADMINISTRATOR_PANEL__
+
+    - Botão para enviar as informações
+            - Envia as Informações para o Sistema de Autenticação
+                - Comparará o Usuário com o banco de dados
+                - Comparará a Senha com o banco de dados
+                    Se for correto, levará para a página __MY_PROFILE__

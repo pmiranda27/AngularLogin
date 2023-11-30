@@ -1,0 +1,68 @@
+<header [ngClass]="blackThemeOn == false ? 'whiteHeader' : 'blackHeader'">
+    <div [ngClass]="bigSizeOn == false ? 'headerSmall' : 'headerBig'">
+        <div class="headerItemLeft">
+        </div>
+    
+        <div class="headerItem center">
+            <div [ngClass]="blackThemeOn == false ? 'backgroundEmpresaWhite' : 'backgroundEmpresaBlack'">
+                Nome de Empresa
+            </div>
+        </div>
+    
+        <div class="headerItemRight">
+            <div [ngClass]="blackThemeOn == false ? 'sunWhite mediumSize' : 'sunBlack mediumSize'"></div>
+            <label class="switchTheme">
+                <input type="checkbox" [(ngModel)]="blackThemeOn" id="toggleTheme">
+                <span [ngClass]="blackThemeOn == false ? 'sliderThemeWhite round' : 'sliderThemeBlack round'"></span>
+            </label>
+            <div [ngClass]="blackThemeOn == false ? 'moonWhite mediumSize' : 'moonBlack mediumSize'"></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div [ngClass]="blackThemeOn == false ? 'painelWhite' : 'painelBlack'">
+        <div [ngClass]="bigSizeOn == false ? 'painelSmall' : 'painelBig'">
+            <div [ngClass]="blackThemeOn == false ? 'titleWhite' : 'titleBlack'">
+                <h2 class="painelTitle">Painel de Registro</h2>
+            </div>
+            <!-- <div class="infoInput"> -->
+            <form class="infoInputReg" (ngSubmit)="onSubmit()" [formGroup]="registerForm" #formDir="ngForm">
+                <div class="formFoda">
+                    <div class="validator">
+                        <input type="text" class="inpForm" placeholder="Nome" formControlName="name" required>
+                        <div *ngIf="name.invalid && formDir.submitted">
+                            <p>Nome é obrigatório.</p>
+                        </div>
+                    </div>
+                    <div class="validator">
+                        <input type="email" class="inpForm" placeholder="E-mail" formControlName="email" required>
+                        <div *ngIf="email.invalid && formDir.submitted">
+                            <p>E-mail é obrigatório.</p>
+                        </div>
+                    </div>
+                    <div class="validator">
+                        <div class="inpFormDiv">
+                            <input [type]="passwordType" class="inpFormPass" placeholder="Senha" formControlName="password" required>
+                            <img [src]="passwordPath" class="eyePass" (click)="changeTypePass()">
+                        </div>
+                        <div *ngIf="password.invalid && formDir.submitted">
+                            <p *ngIf="password.errors?.['required']">Senha é obrigatória.</p>
+                        </div>
+                    </div>
+                    <div class="possuiConta">
+                        <a routerLink="/login">
+                            <label [ngClass]="blackThemeOn == false ? 'toLoginWhite' : 'toLoginBlack'">
+                                <span [ngClass]="bigSizeOn == false ? 'toLoginSmall' : 'toLoginBig'">
+                                    Já possui uma conta?
+                                </span>
+                            </label>
+                        </a>
+                        <input type="submit" [ngClass]="blackThemeOn == false ? 'subButWhite' : 'subButBlack'" value="Registrar-se">
+                    </div>
+                </div>
+            </form>
+            <!-- </div> -->
+        </div>
+    </div>
+</main>

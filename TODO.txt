@@ -1,0 +1,29 @@
+__LOGIN_PAGE__
+
+    - Botão para Painel Admnistrador
+        - Leva para outra __ADMINISTRATOR_PANEL__
+        
+
+__ADMINISTRATOR_PANEL__
+
+    - 2 Inputs que Receberão:
+        Email
+
+        Senha
+            - Checkbox pra visualizar ou não a senha
+
+        - Botão para enviar as informações
+            - Envia as Informações para o Sistema de Autenticação
+                - Comparará o Usuário com o banco de dados
+                - Comparará a Senha com o banco de dados
+                    Se for correto, apagará o perfil
+
+
+        
+__MY_PROFILE__
+
+    Foto template do perfil do Usuário
+
+    Nome do Usuário
+
+    Lorem Ipsum

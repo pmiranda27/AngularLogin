@@ -1,0 +1,2 @@
+- __REGISTER_PAGE__
+- __LOGIN_PAGE__

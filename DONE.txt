@@ -1,0 +1,56 @@
+__REGISTER_PAGE__
+
+    - Toggle para Tamanho da Interface (Normal ou Grande)
+
+    - Toggle para Modo Noturno
+
+    - 3 Inputs que Receberão:
+        Nome
+
+        Email
+
+        Senha
+            - Checkbox pra visualizar ou não a senha
+
+    - Botão para enviar as informações
+
+
+
+__LOGIN_PAGE__
+
+    - Toggle para Tamanho da Interface (Normal ou Grande)
+
+    - Toggle para Modo Noturno
+
+    - 2 Inputs que Receberão:
+        Email
+
+        Senha
+            - Checkbox pra visualizar ou não a senha
+
+    
+
+
+__ADMINISTRATOR_PANEL__
+
+    - 2 Inputs que Receberão:
+        Email
+
+        Senha
+            - Checkbox pra visualizar ou não a senha
+
+        - Botão para enviar as informações
+            - Envia as Informações para o Sistema de Autenticação
+                - Comparará o Usuário com o banco de dados
+                - Comparará a Senha com o banco de dados
+                    Se for correto, apagará o perfil
+
+
+        
+__MY_PROFILE__
+
+    Foto template do perfil do Usuário
+
+    Nome do Usuário
+
+    Lorem Ipsum

@@ -1,0 +1,434 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../../assets/Fonts/Inter-Regular.ttf');
+}
+
+* {
+    font-family: 'Inter';
+
+    user-select: none;
+
+    transition: 0.1s;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background: url('../../assets/Images/background_register.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerSmall {
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.headerBig {
+    width: 100%;
+    height: 130px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.whiteHeader {
+    background-color: rgba(237, 234, 222, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+.blackHeader {
+    background-color: rgba(27, 18, 18, 0.6);
+    backdrop-filter: blur(3px);
+}
+
+.headerItemLeft {
+    position: relative;
+
+    width: 30%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+    gap: 24px;
+}
+
+.headerItem {
+    position: relative;
+
+    width: 25%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+
+    gap: 24px;
+}
+
+.headerItemRight {
+    position: relative;
+
+    width: 30%;
+    height: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 24px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.backgroundEmpresaWhite {
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #000000;
+
+    font-size: xx-large;
+
+    border-radius: 48px;
+
+    background: rgba(249, 246, 238, 0.005);
+    backdrop-filter: blur(10px);
+}
+
+.backgroundEmpresaBlack {
+    width: 100%;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #000000;
+
+    font-size: xx-large;
+
+    border-radius: 48px;
+
+    background: rgba(249, 246, 238, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.smallSize {
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+}
+
+.mediumSize {
+    width: 45px;
+    height: 45px;
+
+    /* border: 1px solid black; */
+    border-radius: 10px;
+
+    background-color: #ffffff;
+}
+
+.bigSize {
+    width: 60px;
+    height: 60px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background-color: #ffffff;
+}
+
+.sunWhite {
+    background: url('../../assets/Images/sunWhite.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.moonWhite {
+    background: url('../../assets/Images/moonWhite.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sunBlack {
+    background: url('../../assets/Images/sunBlack.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.moonBlack {
+    background: url('../../assets/Images/moonBlack.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.painelWhite {
+    border-radius: 48px;
+
+    background: rgba(249, 246, 238, 0.5);
+    backdrop-filter: blur(4px);
+}
+.painelBlack {
+    border-radius: 48px;
+
+    background: rgba(35, 35, 35, 0.65);
+    backdrop-filter: blur(4px);
+}
+
+.painelSmall {
+    width: 460px;
+    height: 360px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.painelBig {
+    width: 480px;
+    height: 380px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.titleWhite {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+
+    color: #000000;
+}
+.titleBlack {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+
+    color: #F9F6EE;
+}
+
+.painelTitle {
+    font-size: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.infoInput {
+    width: 100%;
+    height: calc(95% - 95px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.infoInput {
+    width: 70%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+}
+
+.infoInput .inpForm {
+    width: 100%;
+    height: 35px;
+
+    outline: 0;
+    background-color: #ffffff;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    padding: 0 8px;
+
+    font-size: x-large;
+}
+
+.inpFormDiv {
+    width: 105%;
+    height: 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    outline: 0;
+    background-color: #ffffff;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    font-size: x-large;
+}
+
+.infoInput .inpFormDiv .inpFormPass {
+    width: 100%;
+    max-width: 100%;
+    height: 95%;
+
+    font-size: x-large;
+
+    border: 0;
+    border-radius: 10px;
+
+    outline: 0;
+
+    padding: 0 8px;
+}
+
+.eyePass {
+    height: 30px;
+    
+    margin-right: 8px;
+
+    cursor: pointer;
+}
+
+form .possuiConta {
+    width: 105%;
+
+    margin-top: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.toLoginWhite {
+    color: #0007AD;
+    cursor: pointer;
+}
+.toLoginWhite:hover {
+    color: #00047a;
+}
+
+.toLoginBlack {
+    color: #CDCFFF;
+    cursor: pointer;
+}
+.toLoginBlack:hover {
+    color: #9799c4;
+}
+
+.toLoginSmall {
+    font-size: 18px;
+
+    font-weight: 800;
+}
+.toLoginBig {
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+.subButWhite {
+    width: 160px;
+    height: 40px;
+
+    border: transparent;
+    border-radius: 20px;
+
+    color: #000000;
+
+    background-color: #E9DB9E;
+
+    font-size: x-large;
+    cursor: pointer;
+}
+.subButWhite:hover {
+    background-color: #bbae75;
+}
+.subButWhite:active {
+    background-color: #9c9160;
+}
+
+.subButBlack {
+    width: 160px;
+    height: 40px;
+
+    border: transparent;
+    border-radius: 20px;
+
+    color: #FFF5EE;
+
+    background-color: #1D1D9E;
+
+    font-size: x-large;
+    cursor: pointer;
+}
+.subButBlack:hover {
+    background-color: #161681;
+}
+.subButBlack:active {
+    background-color: #111169;
+}
+
+.validator {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    color: red;
+
+    font-weight: bold;
+}
+.validator p {
+    padding-left: 8px;
+    border-left: 3px solid red;
+}
+
+.hidden {
+    display: none;
+}
